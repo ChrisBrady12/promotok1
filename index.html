@@ -13,6 +13,11 @@
 <center><h2>POR FAVOR OBSERVA EL VIDEO Y POSTERIORMENTE INGRESA AL PROMOTOK 1</h2></center><br>
 <div class="video-preview">
 <img src="p1.png" alt="Vista previa del video" id="previewImg">
+<script>
+document.querySelector('img').addEventListener('contextmenu', function(e) {
+e.preventDefault();
+  });
+</script>
 <center><button class="play-button" onclick="reproducirVideo()">
 <svg viewBox="0 0 24 24">
       <path d="M8 5v14l11-7z"/>
