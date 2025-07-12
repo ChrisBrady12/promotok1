@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nueva página</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<center><img id="img1" src="izzi.png" alt="logo izzi"></center><br>
+<center><h1>BUEN TRATO Y AMABILIDAD</h1></center><br><br>
+
+
+
+<div class="video-preview">
+<img src="BK.png" alt="Vista previa del video" id="previewImg">
+<center><button class="play-button" onclick="reproducirVideo()">
+<svg viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7z"/>
+    </svg>    
+</button></center>
+<video id="video" src="Buen.mp4" controls></video>
+</div>
+<br><br><br>
+
+<center><img id="img2" src="manos.png" alt="imagen"></center><br>
+</div>
+<script>
+    function reproducirVideo() {
+      const video = document.getElementById('video');
+      const previewImg = document.getElementById('previewImg');
+      const playBtn = document.querySelector('.play-button');
+previewImg.style.display = 'none';
+playBtn.style.display = 'none';
+video.style.display = 'block';
+video.play();
+    }
+    
+</script>
+</body>
+</html>
