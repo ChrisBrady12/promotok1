@@ -28,21 +28,39 @@
 .container a {
   text-decoration: none;
   font-size: 18px;
-  color: white; /* Texto blanco para contraste */
-  background-color: #f57450; /* Naranja principal */
+  color: white;
+  background-color: #f57450;
   padding: 12px 24px;
   border-radius: 10px;
   display: inline-block;
   font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
-  box-shadow: 0 0 12px rgba(245, 116, 80, 0.4); /* Brillo suave */
+  box-shadow: 0 0 12px rgba(245, 116, 80, 0.4);
   transition: all 0.3s ease;
+  
+  /* Animación continua de pulso */
+  animation: pulse 2s infinite;
 }
 
+/* Hover: escala + sombra más fuerte */
 .container a:hover {
-  background-color: #d95d3e; /* un tono más oscuro para efecto hover */
+  background-color: #d95d3e;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(245, 116, 80, 0.6);
 }
 
+/* Definición de la animación */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 12px rgba(245, 116, 80, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 116, 80, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(245, 116, 80, 0.4);
+  }
+}
 /* Imágenes superiores */
 #img1 {
   height: 5vh;
