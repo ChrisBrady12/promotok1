@@ -16,15 +16,33 @@
 .container h1 {
   color: aliceblue;
   padding: 15px;
-  font-size: 35px;
+  font-size: 27px;
 }
+
+.container h2 {
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  font-size: 16px;
+}
+  
 .container a {
-  color: aliceblue;
-  display: inline-block;
-  padding: 15px;
-  font-size: 25px;
   text-decoration: none;
+  font-size: 18px;
+  color: white; /* Texto blanco para contraste */
+  background-color: #f57450; /* Naranja principal */
+  padding: 12px 24px;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 12px rgba(245, 116, 80, 0.4); /* Brillo suave */
+  transition: all 0.3s ease;
 }
+
+.container a:hover {
+  background-color: #d95d3e; /* un tono más oscuro para efecto hover */
+}
+
 /* Imágenes superiores */
 #img1 {
   height: 5vh;
@@ -43,13 +61,14 @@
 }
 #previewImg {
     width: 100%;
-    max-width: 600px;
+    max-width: 350px;
     display: block;
+    border-radius: 10px;
 }
 .video-preview video {
   display: none;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 /* Botón para reproducir */
 .play-button {
@@ -78,8 +97,8 @@
   }
 #video {
       display: none;
-      width: 100%;
-      border-radius: 12px;
+      max-width: 350px;
+      border-radius: 10px;
     }
 
 /* Popup (sigue funcionando si decides usarlo después) */
